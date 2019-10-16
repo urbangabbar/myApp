@@ -12,3 +12,5 @@ router.get('/:id',(req,res)=>{
         .then(skill=>res.send(skill))
         .catch(err=>res.send(err));
 })
+
+module.exports=router;
