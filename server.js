@@ -15,7 +15,7 @@ app.use(cors);
 app.use(express.json());
 app.use('/',skillRouter);
 
-const port=process.env.port||200;
+const port=process.env.port||3000;
 app.listen(port,()=>{
     console.log("server started on port"+port);
 })
