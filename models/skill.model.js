@@ -2,7 +2,7 @@ const mongoose=require('mongoose');
 
 const schema=mongoose.Schema;
 
-const skillSchema = new Schema({
+const skillSchema = new schema({
     skillName: { type: String, required: true, unique: true, minlength: 5 },
     description: { type: String, required: true ,minlength: 50},
 });

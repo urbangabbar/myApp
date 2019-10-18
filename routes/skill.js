@@ -2,6 +2,7 @@ const router=require('express').Router();
 const skill=require('../models/skill.model');
 
 router.get('/',(req,res)=>{
+    console.log('request recieved')
     skill.find()
         .then(skills=> res.send(skills))
         .catch(err=>res.sendStatus(err));
