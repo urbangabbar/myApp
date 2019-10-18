@@ -16,7 +16,7 @@ app.use('/api/skill',skillRouter);
 app.use('/api/user',userRouter);
 app.use('/api/auth',authenticate);
 
-const port=process.env.port||200;
+const port=process.env.port||3000;
 app.listen(port,()=>{
     console.log("server started on port"+port);
 })
